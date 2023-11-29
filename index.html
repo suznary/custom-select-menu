@@ -1,0 +1,76 @@
+<!--
+Copyright (c) 2023 muro
+This code is released under the MIT License, see LICENSE.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize Select Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- デフォルトのセレクトメニュー -->
+    <div style="margin-bottom: 160px;">
+      <select name="default-select-menu" id="default-select-menu">
+        <option value="">Please select</option>
+        <option value="select item 1">select item 1</option>
+        <option value="select item 2">select item 2</option>
+        <option value="select item 3">select item 3</option>
+        <option value="select item 4">select item 4</option>
+      </select>
+    </div>
+
+    <!-- カスタムセレクトメニュー -->
+    <div class="custom-select-menu">
+      <button type="button" id="custom-select-menu" aria-controls="select-box" aria-expanded="false">
+        <span class="value">Please select</span>
+        <span class="icon">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 5L7.83333 11L14.1667 5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+      <fieldset id="select-box" aria-hidden="true">
+        <label>
+          <input type="checkbox" name="custom-select-menu" id="select-item-1" value="select item 1">
+          <span class="icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8L5.5 12.5L15 3" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="value">select item 1</span>
+        </label>
+        <label>
+          <input type="checkbox" name="custom-select-menu" id="select-item-2" value="select item 2">
+          <span class="icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8L5.5 12.5L15 3" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="value">select item 2</span>
+        </label>
+        <label>
+          <input type="checkbox" name="custom-select-menu" id="select-item-3" value="select item 3">
+          <span class="icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8L5.5 12.5L15 3" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="value">select item 3</span>
+        </label>
+        <label>
+          <input type="checkbox" name="custom-select-menu" id="select-item-4" value="select item 4">
+          <span class="icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8L5.5 12.5L15 3" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="value">select item 4</span>
+        </label>
+      </fieldset>
+    </div>
+  </body>
+</html>
